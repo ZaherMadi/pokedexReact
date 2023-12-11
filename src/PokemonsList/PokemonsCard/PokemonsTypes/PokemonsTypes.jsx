@@ -1,4 +1,3 @@
-import PokedexJson  from "../pokedex.json"
 import "./index.css"
 function PokemonsTypes(pokemon){
 
