@@ -1,0 +1,9 @@
+.flexbox{
+    display: flex;
+    background-color: rgb(40, 44, 52)
+}
+
+.right{
+position: absolute;
+right: 0;
+}

@@ -1,0 +1,21 @@
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(43, 15, 15, 0.603);
+    margin: 4px;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+}
+
+.align{
+    align-items: center;
+
+}
+
+.No{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}

@@ -1,0 +1,7 @@
+
+
+.flex {
+    background-color: rgba(40, 44, 52, 0.855);
+    display: flex;
+    flex-wrap: wrap;
+}
