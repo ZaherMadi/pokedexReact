@@ -1,23 +1,45 @@
-import ParamPhoto from "./param.png"
-function LangageSelection({LanguageSelected, setLanguage}){
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import React from 'react';
+import ParamPhoto from "./param.png";
 
+function LangageSelection({ LanguageSelected, setLanguage }) {
+    const age = "6"
+    const handleChangeLanguage = (event) => {
+        setLanguage(event.target.value);
+    };
 
-    function ChangeLanguage(LanguageSelected, setLanguage){
-        return(
-            <select value={LanguageSelected} onChange={setLanguage}>
-            <option value="fr">🇫🇷</option>
-            <option value="en">En/🇺🇸</option>
-            <option value="de">de</option>
-            <option value="es">🇪🇸</option>
-            <option value="ja">ja</option>
-          </select>
-
-        )
-
-    }
     return (
-        <a href="#" onClick={ChangeLanguage()}> <img src={ParamPhoto} alt="param" width={80}/></a>
-    )
+        <div>
+            <a href="#"> 
+                <img src={ParamPhoto} alt="param" width={80} />
+            </a>
+            <FormControl fullWidth>
+  <InputLabel id="demo-simple-select-label">Langue</InputLabel>
+  <Select
+    labelId="select-languages-label"
+    id="select-langages"
+    value={LanguageSelected}
+    label="LabelLangue"
+    onChange={handleChangeLanguage}
+  >
+
+    <MenuItem value="fr">🇫🇷</MenuItem>
+    <MenuItem value="en">🇺🇸</MenuItem>
+    <MenuItem value="de">de</MenuItem>
+    <MenuItem value="es">🇪🇸</MenuItem>
+    <MenuItem value="ja">ja</MenuItem>
+
+  </Select>
+</FormControl>
+            
+        
+        
+        </div>
+    );
 }
 
-export default LangageSelection
+export default LangageSelection;
