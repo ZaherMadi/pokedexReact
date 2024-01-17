@@ -12,7 +12,8 @@ const [values,setvalues] = React.useState("fr")
     <div className="flexbox">
 
        <div><Logo/></div>
-       <div className="right"><LangageSelection /></div>
+       <div className="right">                <LangageSelection LanguageSelected={values} setLanguage={setvalues} />
+</div>
 
 
 
