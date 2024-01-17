@@ -7,7 +7,6 @@ import React from 'react';
 import ParamPhoto from "./param.png";
 
 function LangageSelection({ LanguageSelected, setLanguage }) {
-    const age = "6"
     const handleChangeLanguage = (event) => {
         setLanguage(event.target.value);
     };
@@ -43,3 +42,4 @@ function LangageSelection({ LanguageSelected, setLanguage }) {
 }
 
 export default LangageSelection;
+
